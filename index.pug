@@ -1,0 +1,58 @@
+link(href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet")
+a.patreon-link(href="" target="_blank")
+  .badge-container
+    .badge-text Embed Generator for Python made by QWertx#0003
+    .badge-icon
+    .badge-text.badge-text-bottom 
+
+.container
+  .col-md-10.offset-md-1
+    .card-deck
+      .card
+        .card-header Embed Editor
+        .card-block
+          form#form
+            .form-group
+              label Basic settings
+              input#title.form-control(type="text", placeholder="Enter a Title for the embed")
+            .form-group
+              input#description.form-control(type="text", placeholder="Enter a Description for the embed")
+            .form-group
+              input#url.form-control(type="text", placeholder="Enter a Url for the embed")
+            .form-group
+              label Color
+              input#color.form-control(type="color")
+            .form-group
+              label Thumbnail settings
+              input#icon.form-control(type="text", placeholder="Enter an Icon Image Adress for the embed")
+            .form-group
+              label Author settings
+              input#author_name.form-control(type="text", placeholder="Enter an Author Name for the embed")
+            .form-group
+              input#author_url.form-control(type="text", placeholder="Enter an Author Link for the embed")
+            .form-group
+              input#author_icon.form-control(type="text", placeholder="Enter an Author Icon Image Adress for the embed")
+            .input-fields
+            .form-group
+              label Fields
+            .form-group
+              label Footer settings
+              input#footer.form-control(type="text", placeholder="Enter a Footer Text for the embed")
+  br/
+  .col-md-8.offset-md-2          
+    .card
+      .card-header Embed Preview
+      .card-block.preview
+        .wrapper
+          .side-colored
+          .card.embed
+            .card-block
+              .embed-inner
+  br/
+  .col-md-10.offset-md-1
+    .card
+      .card-header Python code
+      .card-block
+        pre
+          code.python.source
+                
